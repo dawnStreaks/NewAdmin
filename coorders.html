@@ -1,0 +1,1371 @@
+<!doctype html>
+<html lang="en" class="no-focus">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+
+        <title>HumHumm.com | admin</title>
+        <meta name="description" content="mysupply.me | admin created by WG">
+        <meta name="author" content="WG">
+        <meta name="robots" content="noindex, nofollow">
+
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="mysupply.me | admin">
+        <meta property="og:site_name" content="mysupply.me">
+        <meta property="og:description" content="mysupply.me | admin created by WG">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+ 
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="assets/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="assets/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="assets/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+        <!-- Page JS Plugins CSS -->
+        <link rel="stylesheet" href="assets/js/plugins/bootstrap-datepicker/css/bootstrap-datepicker3.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/select2/css/select2.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/jquery-tags-input/jquery.tagsinput.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/jquery-auto-complete/jquery.auto-complete.min.css">
+        <link rel="stylesheet" href="assets/js/plugins/ion-rangeslider/css/ion.rangeSlider.css">
+        <link rel="stylesheet" href="assets/js/plugins/dropzonejs/dist/dropzone.css">
+        <link rel="stylesheet" href="assets/js/plugins/flatpickr/flatpickr.min.css">
+        <!-- Stylesheets -->
+        <!-- Fonts and mysupply.me framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,400,400i,600,700&display=swap">
+        <link rel="stylesheet" id="css-main" href="assets/css/codebase.min.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/flat.min.css"> -->
+        <link rel="stylesheet" id="css-theme" href="assets/css/themes/pulse.min.css">
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+
+        <!-- Page Container -->
+        <div id="page-container" class="sidebar-mini sidebar-o sidebar-inverse enable-page-overlay side-scroll page-header-fixed main-content-boxed">
+
+    <!-- Side Overlay--> 
+            <aside id="side-overlay">
+                <!-- Side Header -->
+                <div class="content-header content-header-fullrow">
+                    <div class="content-header-section align-parent">
+                        <!-- Close Side Overlay -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-dual-secondary align-v-r" data-toggle="layout" data-action="side_overlay_close">
+                            <i class="fa fa-times text-danger"></i>
+                        </button>
+                        <!-- END Close Side Overlay -->
+
+                        <!-- User Info -->
+                        <div class="content-header-item">
+                            <a class="img-link mr-5" href="javascript:void(0)">
+                                <img class="img-avatar img-avatar32" src="assets/media/avatars/avatar14.jpg" alt="">
+                            </a>
+                            <a class="align-middle link-effect font-w600" href="javascript:void(0)">Admin</a>
+                        </div>
+                        <!-- END User Info -->
+                    </div>
+                </div>
+                <!-- END Side Header -->
+
+                <!-- Side Content -->
+                <div class="content-side">
+                    <!-- Mini Stats -->
+                    <div class="block pull-t pull-r-l">
+                        <div class="block-content block-content-full block-content-sm bg-danger-light">
+                            <div class="row text-center">
+                                <div class="col-4">
+                                    <div class="font-size-sm font-w600 text-uppercase text-pulse-dark">Sales</div>
+                                    <div class="font-size-h4 text-pulse-darker">351</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="font-size-sm font-w600 text-uppercase text-pulse-dark">Order</div>
+                                    <div class="font-size-h4 text-pulse-darker">25</div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="font-size-sm font-w600 text-uppercase text-pulse-dark">Products</div>
+                                    <div class="font-size-h4 text-pulse-darker">137</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- END Mini Stats -->
+
+                    <!-- Search -->
+                    <div class="block pull-r-l">
+                        <div class="block-content block-content-full block-content-sm bg-body-light">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" id="side-overlay-search" name="side-overlay-search" placeholder="Search..">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-secondary px-10">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <!-- END Search -->
+
+                    <!-- Notifications -->
+                    <div class="block pull-r-l">
+                        <div class="block-header bg-body-light">
+                            <h3 class="block-title">Notifications</h3>
+                            <div class="block-options">
+                                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="state_toggle" data-action-mode="demo">
+                                    <i class="si si-refresh"></i>
+                                </button>
+                                <button type="button" class="btn-block-option" data-toggle="block-option" data-action="content_toggle"></button>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <ul class="list list-activity">
+                                <li>
+                                    <i class="si si-wallet text-success"></i>
+                                    <div class="font-w600">2 New Order</div>
+                                    <div>
+                                        <a href="orders.html">Active Orders</a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">5 min ago</div>
+                                </li>
+                                <li>
+                                    <i class="si si-info text-danger"></i>
+                                    <div class="font-w600">3 Low Inventory Products</div>
+                                    <div>
+                                        <a href="products.html">Low Products</a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">26 min ago</div>
+                                </li>
+                                <li>
+                                    <i class="si si-pencil text-info"></i>
+                                    <div class="font-w600">Uploading required Documents</div>
+                                    <div>
+                                        <a href="profile.html">
+                                            <i class="fa fa-file-text-o"></i> Admin Mysupply
+                                        </a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">3 hours ago</div>
+                                </li>
+                                <li>
+                                    <i class="si si-plus text-success"></i>
+                                    <div class="font-w600">New Quotes</div>
+                                    <div>
+                                        <a href="quotes.html">View Quotes</a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">5 hours ago</div>
+                                </li>
+                                <li>
+                                    <i class="si si-star text-warning"></i>
+                                    <div class="font-w600">1 New reviews</div>
+                                    <div>
+                                        <a href="reviews.html">See Reviews</a>
+                                    </div>
+                                    <div class="font-size-xs text-muted">8 hours ago</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- END Notifications -->
+                </div>
+                <!-- END Side Content -->
+            </aside>
+            <!-- END Side Overlay -->
+
+                <!-- Sidebar -->
+            <nav id="sidebar">
+                <!-- Sidebar Content -->
+                <div class="sidebar-content">
+                    <!-- Side Header -->
+                    <div class="content-header content-header-fullrow px-15">
+                        <!-- Mini Mode -->
+                        <div class="content-header-section sidebar-mini-visible-b">
+                            <!-- Logo -->
+                            <span class="content-header-item font-w700 font-size-xl float-left animated fadeIn">
+                                <span class="text-dual-primary-dark">H</span><span class="text-primary">UM</span>
+                            </span>
+                            <!-- END Logo -->
+                        </div>
+                        <!-- END Mini Mode -->
+
+                        <!-- Normal Mode -->
+                        <div class="content-header-section text-center align-parent sidebar-mini-hidden">
+                            <!-- Close Sidebar, Visible only on mobile screens -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <button type="button" class="btn btn-circle btn-dual-secondary d-lg-none align-v-r" data-toggle="layout" data-action="sidebar_close">
+                                <i class="fa fa-times text-danger"></i>
+                            </button>
+                            <!-- END Close Sidebar -->
+
+                            <!-- Logo -->
+                            <div class="content-header-item">
+                                <a class="link-effect font-w700" href="index.html">
+                                    <i class="si si-fire text-primary"></i>
+                                    <span class="font-size-xl text-dual-primary-dark">Hum</span><span class="font-size-xl text-primary">Hum</span>
+                                </a>
+                            </div>
+                            <!-- END Logo -->
+                        </div>
+                        <!-- END Normal Mode -->
+                    </div>
+                    <!-- END Side Header -->
+
+                    <!-- Side User -->
+                    <div class="content-side content-side-full content-side-user px-10 align-parent">
+                        <!-- Visible only in mini mode -->
+                        <div class="sidebar-mini-visible-b align-v animated fadeIn">
+                            <img class="img-avatar img-avatar32" src="assets/media/avatars/avatar15.jpg" alt="">
+                        </div>
+                        <!-- END Visible only in mini mode -->
+
+                        <!-- Visible only in normal mode -->
+                        <div class="sidebar-mini-hidden-b text-center">
+                            <a class="img-link" href="profile.html">
+                                <img class="img-avatar" src="assets/media/avatars/avatar15.jpg" alt="">
+                            </a>
+                            <P></P>
+                            <ul class="list-inline ">
+                                <li class="list-inline-item">
+                                    <a class="link-effect text-dual-primary-dark font-size-sm font-w600 text-uppercase" href="profile.html">Admin Name</a>
+                                </li>
+                            </ul>
+                            
+                        </div>
+                        <!-- END Visible only in normal mode -->
+                    </div>
+                    <!-- END Side User -->
+                    <!-- Side Navigation -->
+                    <div class="content-side content-side-full">
+                        <ul class="nav-main">
+                            <li>
+                                <a class="active" href="dashboard.html"><i class="si si-cup"></i><span class="sidebar-mini-hide">Dashboard</span></a>
+                            </li>
+                            
+                                                        <li class="">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-rocket"></i><span class="sidebar-mini-hide">Supplier Panel</span></a>
+                                <ul>
+                                    <li><a href="supplier.html">Supplier</a></li>
+                                    <li><a href="quotes.html">Manage Quotes</a></li>
+                                    <li><a href="#">Manage Communication</a></li>
+                                    <li><a href="#">Supplier - Buyer Communications</a></li>
+                                    <li><a href="products.html">Products</a></li>
+                                    <li><a href="#">Configurations</a></li>
+                                    <li><a href="orders.html">Supplier Orders</a></li>
+                                    <li><a href="#">Manage Commission</a></li>
+                                    <li><a href="#">Supplier Payment</a></li>
+                                    <li><a href="#">Shipping Methods</a></li>
+                                    <li><a href="#">Supplier Feedback</a></li>
+                                </ul>
+                            </li>    
+
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-puzzle"></i><span class="sidebar-mini-hide">Supplier Add-Ons</span></a>
+                                <ul>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Seller Categories</span></a>
+                                        <ul>
+                                            <li><a href="se-requested.html"><span class="sidebar-mini-hide">New Requested Categories</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Supplier Offers</span></a>
+                                        <ul>
+                                            <li><a href="si-add0ffers.html">Add Offers</a></li>
+                                            <li><a href="si-export0ffers.html">Export Offers</a></li>
+                                            <li><a href="si-update0ffers.html">Update Offers</a></li>
+                                        </ul>    
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">SuSupplier User Permission</span></a>
+                                        <ul>
+                                            <li><a href="su-settings.html">Supplier User Settings</a></li>
+                                        </ul>
+                                    </li>
+                                  
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Supplier Microsite</span></a>
+                                        <ul>
+                                            <li><a href="su-microsite.html">Manage Microsite</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Latest Supplier</span></a>
+                                        <ul>
+                                            <li><a href="su-latestsuppliers.html">Manage Latest Suppliers</a></li>
+                                            <li><a href="su-configuration.html">Configuration</a></li>
+                                        </ul>
+                                    </li>
+                                   
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Configurations</span></a>
+                                        <ul>
+                                            <li><a href="co-supplier.html">Supplier - Configuration</a></li>
+                                            <li><a href="co-otifications.html">Email Notifications Settings</a></li>
+                                            <li><a href="co-type.html">Supplier Type</a></li>
+                                        </ul>
+                                    </li>
+                                   
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Vendor Bank Manager</span></a>
+                                        <ul>
+                                            <li><a href="si-bank.html">Bank List</a></li>
+                                        </ul>
+                                    </li>
+                        
+                                </ul>
+                            </li>                           
+                            <li class="">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-tag"></i><span class="sidebar-mini-hide">Sales</span></a>
+                                <ul>
+                                    <li><a href="quotes.html">Quotes</a></li>
+                                    <li><a href="orders.html">Orders</a></li>
+                                    <li><a href="invoices.html">Invoices</a></li>
+                                    <li><a href="shipping.html">Shipments</a></li>
+                                    <li><a href="dispatches.html">Dispatches</a></li>
+                                    <li><a href="batches.html">Batches</a></li>
+                                    <li><a href="memos.html">Credit Memos</a></li>
+                                    <li><a href="returns.html">Returns</a></li>
+                                    <li><a href="transactions.html">Transactions</a></li>
+                                    <li><a href="bank.html">Bank Transactions</a></li>
+
+                                    
+                                </ul>
+                            </li>    
+                            <li class="">
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-list"></i><span class="sidebar-mini-hide">Catalog</span></a>
+                                <ul>
+                                    <li><a href="products.html">Products</a></li>
+                                    <li><a href="categories.html">Categories</a></li>
+                                    <li><a href="scategories.html">Shared Catalogs</a></li>
+                                </ul>
+                            </li> 
+
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-paper-plane"></i><span class="sidebar-mini-hide">Ajax Suite</span></a>
+                                <ul>
+                                            <li><a href="ajax-suite.html">Ajax Suite</a></li>
+                                            <li><a href="ajax-cart.html">Ajax Cart</a></li>
+
+                                </ul>
+                            </li>  
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-user"></i><span class="sidebar-mini-hide">Customers</span></a>
+                                <ul>
+                                            <li><a href="customers.html">All Customers</a></li>
+                                            <li><a href="customers-online.html">Now Online</a></li>
+                                            <li><a href="customers-segments.html">Segments</a></li>
+                                            <li><a href="customers-groups.html">Customer Groups</a></li>
+                                            <li><a href="companies.html">Companies</a></li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-volume-2"></i><span class="sidebar-mini-hide">Marketing</span></a>
+                                <ul>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Promotions</span></a>
+                                        <ul>
+                                        <li><a href="marketing-catalog.html"><span class="sidebar-mini-hide">Catalog Price Rule</span></a></li>
+                                        <li><a href="marketing-related.html"><span class="sidebar-mini-hide">Related Products Rules</span></a></li>
+                                        <li><a href="marketing-cart.html"><span class="sidebar-mini-hide">Cart Price Rules</span></a></li>
+                                        <li><a href="marketing-gift.html"><span class="sidebar-mini-hide">Gift Card Accounts</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Private Sales</span></a>
+                                        <ul>
+                                        <li><a href="events.html"><span class="sidebar-mini-hide">Events</span></a></li>
+                                        <li><a href="invitations.html"><span class="sidebar-mini-hide">Invitations</span></a></li>
+                                        </ul>    
+    
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Communications</span></a>
+                                        <ul>
+                                        <li><a href="co-email.html"><span class="sidebar-mini-hide">Email Templates</span></a></li>
+                                        <li><a href="co-newsletter.html"><span class="sidebar-mini-hide">Newsletter Template</span></a></li>
+                                        <li><a href="co-newsletterq.html"><span class="sidebar-mini-hide">Newsletter Queue</span></a></li>
+                                        <li><a href="co-subscribers.html"><span class="sidebar-mini-hide">Newsletter Subscribers</span></a></li>
+                                        <li><a href="co-ereminders.html"><span class="sidebar-mini-hide">Email Reminders</span></a></li>
+                                        </ul>    
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Social</span></a>
+                                        <ul>
+                                        <li><a href="social-connect.html"><span class="sidebar-mini-hide">Connect to Facebook</span></a></li>
+                                        </ul>    
+    
+                                    </li>
+                                    
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">SEO &amp; Search</span></a>
+                                        <ul>
+                                        <li><a href="seo-rewrites.html"><span class="sidebar-mini-hide">URL Rewrites</span></a></li>
+                                        <li><a href="seo-terms.html"><span class="sidebar-mini-hide">Search Terms</span></a></li>
+                                        <li><a href="seo-synonyms.html"><span class="sidebar-mini-hide">Search Synonyms</span></a></li>
+                                        <li><a href="seo-map.html"><span class="sidebar-mini-hide">Site Map</span></a></li>
+                                        </ul>    
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">User Content</span></a>
+                                        <ul>
+                                            <li><a href="reviews.html">Reviews</a></li>
+                                        </ul>
+                                    </li>
+                         
+                                    
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-bar-chart"></i><span class="sidebar-mini-hide">Reports</span></a>
+                                <ul>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Marketing</span></a>
+                                        <ul>
+                                            <li><a href="r-.html"><span class="sidebar-mini-hide">Products in Cart</span></a></li>
+                                            <li><a href="r-.html"><span class="sidebar-mini-hide">Search Terms</span></a></li>
+                                            <li><a href="r-.html"><span class="sidebar-mini-hide">Abandoned Carts</span></a></li>
+                                            <li><a href="r-.html"><span class="sidebar-mini-hide">Newsletter Problem Reports</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Reviews</span></a>
+                                        <ul>
+                                            <li><a href="r-.html">By Customers</a></li>
+                                            <li><a href="r-.html">By Products</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Sales</span></a>
+                                        <ul>
+                                            <li><a href="r-.html">Orders</a></li>
+                                            <li><a href="r-.html">Tax</a></li>
+                                            <li><a href="r-.html">Invoiced</a></li>
+                                            <li><a href="r-.html">Shipping</a></li>
+                                            <li><a href="r-.html">Refunds</a></li>
+                                            <li><a href="r-.html">Coupons</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                  
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Customers </span></a>
+                                        <ul>
+                                            <li><a href="r-.html">Order Total</a></li>
+                                            <li><a href="r-.html">Order Count</a></li>
+                                            <li><a href="r-.html">New</a></li>
+                                            <li><a href="r-.html">Wish Lists</a></li>
+                                            <li><a href="r-.html">Segments</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>       
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Products</span></a>
+                                        <ul>
+                                            <li><a href="r-.html">Views</a></li>
+                                            <li><a href="r-.html">Bestsellers</a></li>
+                                            <li><a href="r-.html">Low Stock</a></li>
+                                            <li><a href="r-.html">Ordered</a></li>
+                                            <li><a href="r-.html">Downloads</a></li>
+                                        </ul>
+                                    </li>
+                                   
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Private Sales</span></a>
+                                        <ul>
+                                            <li><a href="r-.html">Invitations</a></li>
+                                            <li><a href="r-.html">Invited Customers</a></li>
+                                            <li><a href="r-.html">Conversions</a></li>
+                                        </ul>
+                                    </li>
+                                   
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Statistics </span></a>
+                                        <ul>
+                                            <li><a href="r-.html">Refresh Statistics</a></li>
+                                        </ul>
+                                    </li>
+                                   
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Business Intelligence </span></a>
+                                        <ul>
+                                            <li><a href="r-.html"><span class="sidebar-mini-hide">Advanced Reporting</span></a>
+                                            </li><li><a href="r-.html"><span class="sidebar-mini-hide">BI Essentials</span></a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide"> Notifications</span></a>
+                                        <ul>
+                                            <li><a href="r-.html">Out of Stock Notifications</a></li>
+                                            <li><a href="r-.html">Price Notifications</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    
+
+                                    
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-handbag"></i><span class="sidebar-mini-hide">Stores</span></a>
+                                <ul>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Settings</span></a>
+                                        <ul>
+                                            <li><a href="stores-all.html"><span class="sidebar-mini-hide">All Stores</span></a></li>
+                                            <li><a href="stores-configuration.html"><span class="sidebar-mini-hide">Configuration</span></a></li>
+                                            <li><a href="stores-terms.html"><span class="sidebar-mini-hide">Terms and Conditions</span></a></li>
+                                            <li><a href="stores-ostatus.html"><span class="sidebar-mini-hide">Order Status</span></a></li>
+                                        </ul>   
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Taxes</span></a>
+                                        <ul>
+                                            <li><a href="tax-rules.html">Tax Rules</a></li>
+                                            <li><a href="tax-zones.html">Tax Zones and Rates</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Currency</span></a>
+                                        <ul>
+                                            <li><a href="currency-rates.html">Currency Rates</a></li>
+                                            <li><a href="currency-symbols.html">Currency Symbols</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Attributes</span></a>
+                                        <ul>
+                                            <li><a href="stores-customer.html">Customer</a></li>
+                                            <li><a href="stores-address.html">Customer Address</a></li>
+                                            <li><a href="stores-product.html">Product</a></li>
+                                            <li><a href="stores-attribute.html">Attribute Set</a></li>
+                                            <li><a href="stores-returns.html">Returns</a></li>
+                                            <li><a href="stores-rating.html">Rating</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>       
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Shipping</span></a>
+                                        <ul>
+                                            <li><a href="shipping-carriers.html">Carriers</a></li>
+                                            <li><a href="shipping-locations.html">Locations</a></li>
+                                            <li><a href="shipping-packaging.html">Packaging</a></li>
+                                            <li><a href="shipping-experiences.html">Experiences</a></li>
+                                        </ul>
+                                    </li>
+                                   
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Other Settings</span></a>
+                                        <ul>
+                                            <li><a href="gift-wrapping.html">Gift Wrapping</a></li>
+                                        </ul>
+                                    </li>
+                                                         
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a class="nav-submenu" data-toggle="nav-submenu" href="#"><i class="si si-settings"></i><span class="sidebar-mini-hide">System</span></a>
+                                <ul>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Data Transfer</span></a>
+                                        <ul>
+                                            <li><a href="system-import.html"><span class="sidebar-mini-hide">Import</span></a></li>
+                                            <li><a href="system-export.html"><span class="sidebar-mini-hide">Export</span></a></li>
+                                            <li><a href="system-tax.html"><span class="sidebar-mini-hide">Import/Export Tax Rates</span></a></li>
+                                            <li><a href="system-history.html"><span class="sidebar-mini-hide">Import History</span></a></li>
+                                            <li><a href="system-scheduled.html"><span class="sidebar-mini-hide">Scheduled Import/Export</span></a></li>
+                                            
+                                        </ul>   
+                                    </li>    
+    
+    
+    
+    
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Extensions</span></a>
+                                        <ul>
+                                            <li><a href="system-integrations.html">Integrations</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Tools</span></a>
+                                        <ul>
+                                            <li><a href="system-cache.html">Cache Management</a></li>
+                                            <li><a href="system-index.html">Index Management</a></li>
+                                            <li><a href="system-backups.html">Backups</a></li>
+                                            <li><a href="system-wizard.html">Web Setup Wizard</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Support</span></a>
+                                        <ul>
+                                            <li><a href="support.html">Support</a></li>
+                                            <li><a href="system-report.html">System Report</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>       
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Permissions</span></a>
+                                        <ul>
+                                            <li><a href="permissions-all.html">All Users</a></li>
+                                            <li><a href="permissions-locked.html">Locked Users</a></li>
+                                            <li><a href="permissions-roles.html">User Roles</a></li>
+                                        </ul>
+                                    </li>
+                                   
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Action Logs</span></a>
+                                        <ul>
+                                            <li><a href="action-report.html">Report</a></li>
+                                            <li><a href="action-archive.html">Archive</a></li>
+                                            <li><a href="action-bulk.html">Bulk Actions</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a class="nav-submenu" data-toggle="nav-submenu" href="#"><span class="sidebar-mini-hide">Other Settings</span></a>
+                                        <ul>
+                                            <li><a href="settings-notifications.html">Notifications</a></li>
+                                            <li><a href="settings-custom.html">Custom Variables</a></li>
+                                            <li><a href="settings-manage.html">Manage Encryption Key</a></li>
+                                            
+                                        </ul>
+                                    </li>
+                                                         
+                                </ul>
+                            </li>                            
+                          
+                  
+                        </ul>
+                    </div>
+                    <!-- END Side Navigation -->
+                </div>
+                <!-- Sidebar Content -->
+            </nav>
+            <!-- END Sidebar -->
+
+            <!-- Header -->
+            <header id="page-header">
+                <!-- Header Content -->
+                <div class="content-header">
+                    <!-- Left Section -->
+                    <div class="content-header-section">
+                        <!-- Toggle Sidebar -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-dual-secondary" data-toggle="layout" data-action="sidebar_toggle">
+                            <i class="fa fa-navicon"></i>
+                        </button>
+                        <!-- END Toggle Sidebar -->
+
+                        <!-- User Dropdown -->
+                        <div class="dropdown d-inline-block" role="group">
+                            <button type="button" class="btn btn-dual-secondary dropdown-toggle" id="page-header-user-dropdown" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Admin
+                            </button>
+                            <div class="dropdown-menu min-width-200" aria-labelledby="page-header-user-dropdown">
+                                <a class="dropdown-item" href="profile.html">
+                                    <i class="si si-user mr-5"></i> Profile
+                                </a>
+                                <div class="dropdown-divider"></div>
+
+                                <!-- Toggle Side Overlay -->
+                                <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                <a class="dropdown-item" href="settings.html" data-toggle="layout" data-action="side_overlay_toggle">
+                                    <i class="si si-wrench mr-5"></i> Settings
+                                </a>
+                                <!-- END Side Overlay -->
+
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="signin.html">
+                                    <i class="si si-logout mr-5"></i> Sign Out
+                                </a>
+                            </div>
+                        </div>
+                        <!-- END User Dropdown -->
+                    </div>
+                    <!-- END Left Section -->
+
+                    <!-- Right Section -->
+                    <div class="content-header-section">
+                        <!-- Open Search Section -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-dual-secondary d-sm-none" data-toggle="layout" data-action="header_search_on">
+                            <i class="fa fa-search"></i>
+                        </button>
+                        <!-- END Open Search Section -->
+
+                        <!-- Full Search -->
+                        <div class="content-header-item d-none d-sm-inline-block ml-5">
+                            <form>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Search..">
+                                    <div class="input-group-append">
+                                        <button type="submit" class="btn btn-secondary">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <!-- END Full Search -->
+
+                        <div class="btn-group" role="group">
+                            <button type="button" class="btn btn-rounded btn-dual-secondary" id="page-header-notifications" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-flag"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right min-width-300" aria-labelledby="page-header-notifications" style="">
+                                <h5 class="h6 text-center py-10 mb-0 border-b text-uppercase">Choose a language</h5>
+                                <a class="dropdown-item text-center mb-0" href="javascript:void(0)">
+                                    <i class="fa fa-flag mr-5"></i> English
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item text-center mb-0" href="javascript:void(0)">
+                                    <i class="fa fa-flag mr-5"></i> Arabic
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Toggle Side Overlay -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-dual-secondary" data-toggle="layout" data-action="side_overlay_toggle">
+                            <span class="badge badge-pill badge-danger mr-5">6</span> <i class="fa fa-cog"></i>
+                        </button>
+                        <!-- END Toggle Side Overlay -->
+                    </div>
+                    <!-- END Right Section -->
+                </div>
+                <!-- END Header Content -->
+
+                <!-- Header Search -->
+                <div id="page-header-search" class="overlay-header">
+                    <div class="content-header content-header-fullrow">
+                        <form>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <!-- Close Search Section -->
+                                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                    <button type="button" class="btn btn-secondary px-15" data-toggle="layout" data-action="header_search_off">
+                                        <i class="fa fa-times"></i>
+                                    </button>
+                                    <!-- END Close Search Section -->
+                                </div>
+                                <input type="text" class="form-control" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
+                                <div class="input-group-append">
+                                    <button type="submit" class="btn btn-secondary px-15">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END Header Search -->
+
+                <!-- Header Loader -->
+                <div id="page-header-loader" class="overlay-header bg-primary">
+                    <div class="content-header content-header-fullrow text-center">
+                        <div class="content-header-item">
+                            <i class="fa fa-sun-o fa-spin text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Loader -->
+            </header>
+            <!-- END Header -->
+
+            <!-- Main Container -->
+            <main id="main-container">
+                <!-- Page Content -->
+   
+                <!-- Page Content -->
+       
+                <div class="content">
+                    <!-- Statistics -->
+                    <!-- CountTo ([data-toggle="countTo"] is initialized in Helpers.coreAppearCountTo()) -->
+                    <!-- For more info and examples you can check out https://github.com/mhuggins/jquery-countTo -->
+                    <div class="content-heading">
+                <!-- Overview -->
+                     
+               
+                        <div class="block-header block-header-default">
+                            <h3 class="block-title">Completed Orders</h3>
+                            <div class="block-options">
+                                <div class="dropdown">
+                            <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled" id="ecom-orders-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Today
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="ecom-orders-drop">
+                                <a class="dropdown-item active" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-calendar mr-5"></i>Today
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-calendar mr-5"></i>This Week
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-calendar mr-5"></i>This Month
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-calendar mr-5"></i>This Year
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-circle-o mr-5"></i>All Time
+                                </a>
+                            </div>
+                        </div>
+
+                                        <div class="dropdown">
+                            <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled" id="ecom-orders-filter-drop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                All
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="ecom-orders-filter-drop">
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-spinner fa-spin text-warning mr-5"></i>Pending
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-refresh fa-spin text-info mr-5"></i>Processing
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-times text-danger mr-5"></i>Canceled
+                                </a>
+                                <a class="dropdown-item" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-check text-success mr-5"></i>Completed
+                                </a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item active" href="javascript:void(0)">
+                                    <i class="fa fa-fw fa-circle-o mr-5"></i>All
+                                </a>
+                            </div>
+                        </div>
+
+
+                                        <button type="button" class="btn btn-sm btn-secondary" onclick="Codebase.helpers('print-page');">
+                                            <i class="si si-printer"></i> Print 
+                                        </button> 
+                                        
+                                        <div class="dropdown">
+                                                <button type="button" class="btn btn-sm btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                     <i class="fa fa-download mr-5"></i>Export
+                                                </button>
+                                                <div class="dropdown-menu dropdown-menu-right" style="">
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="fa fa-file-excel-o mr-5"></i>Export As Excel
+                                                    </a>
+                                                    <div class="dropdown-divider"></div>
+                                                    <a class="dropdown-item" href="javascript:void(0)">
+                                                        <i class="fa fa-file-pdf-o mr-5"></i>Export As pdf
+                                                    </a>
+                                                </div>
+                                            </div>
+                                                                                
+                                        <div class="dropdown">
+                                            <div id="accordion" role="tablist" aria-multiselectable="true">
+                                                <div>
+                                                    <a class="btn btn-sm btn-secondary js-tooltip-enabled" data-toggle="collapse" data-parent="#accordion" href="#accordion_q1" aria-expanded="false" aria-controls="accordion_q1"> <i class="fa fa-fw fa-flask mr-5"></i>Filter</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                           </div>
+                </div>
+                <div id="accordion_q1" class="collapse" role="tabpanel" aria-labelledby="accordion_h1" data-parent="#accordion" style="">
+                    <div class="block-content">
+                        <form action="be_pages_hosting_emails.html" method="POST" onsubmit="return false;">
+                            <div class="form-group row gutters-tiny mb-0 items-push">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="example-hosting-mailbox" name="example-hosting-mailbox" placeholder="orders">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <select class="custom-select" id="example-hosting-domains" name="example-hosting-domains">
+                                            <option value="0">Status</option>
+                                            <option value="1">Completed</option>
+                                            <option value="2">Pending</option>
+                                            <option value="3">Canceled</option>
+                                        </select>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="example-hosting-mailbox" name="example-hosting-mailbox" placeholder="Purchase Date">
+                                    </div>
+                                </div>
+                                <div class="form-group row gutters-tiny mb-0 items-push">
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="example-hosting-mailbox" name="example-hosting-mailbox" placeholder="Bill to">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <input type="text" class="form-control" id="example-hosting-mailbox" name="example-hosting-mailbox" placeholder="Shipping to">
+                                    </div>
+                                    <div class="col-md-4">
+                                        <button type="submit" class="btn btn-alt-success btn-block">
+                                            <i class="fa fa-flask mr-1"></i> Filter
+                                        </button>
+                                    </div>
+                                </div>
+                                
+                            </form>
+                        </div>                                  
+                </div>
+                <div class="row gutters-tiny">
+                        
+                        <!-- All Product -->
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-rounded block-link-shadow" href="orders.html">
+                                <div class="block-content block-content-full block-sticky-options">
+                                    <div class="block-options">
+                                        <div class="block-options-item">
+                                            <i class="fa fa-archive fa-2x text-success-light"></i>
+                                        </div>
+                                    </div>
+                                    <div class="py-20 text-center">
+                                        <div class="font-size-h2 font-w700 mb-0 text-success" data-toggle="countTo" data-to="32">0</div>
+                                        <div class="font-size-sm font-w600 text-uppercase text-muted">All Product</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END All Product -->
+                        
+                        <!-- Completed -->
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-rounded block-link-shadow" href="coorders.html">
+                                <div class="block-content block-content-full block-sticky-options">
+                                    <div class="block-options">
+                                        <div class="block-options-item">
+                                            <i class="fa fa-check fa-2x text-warning-light"></i>
+                                        </div>
+                                    </div>
+                                    <div class="py-20 text-center">
+                                        <div class="font-size-h2 font-w700 mb-0 text-warning" data-toggle="countTo" data-to="30">0</div>
+                                        <div class="font-size-sm font-w600 text-uppercase text-muted">Completed</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>                                    
+                        <!-- Completed -->
+                        
+                        <!-- All Products -->
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-rounded block-link-shadow" href="orders.html">
+                                <div class="block-content block-content-full block-sticky-options">
+                                    <div class="block-options">
+                                        <div class="block-options-item">
+                                            <i class="fa fa-circle-o fa-2x text-info-light"></i>
+                                        </div>
+                                    </div>
+                                    <div class="py-20 text-center">
+                                        <div class="font-size-h2 font-w700 mb-0 text-info" data-toggle="countTo" data-to="12">0</div>
+                                        <div class="font-size-sm font-w600 text-uppercase text-muted">Pending</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END All Products -->
+
+                        <!-- Top Sellers -->
+                        <div class="col-md-6 col-xl-3">
+                            <a class="block block-rounded block-link-shadow" href="caorders.html">
+                                <div class="block-content block-content-full block-sticky-options">
+                                    <div class="block-options">
+                                        <div class="block-options-item">
+                                            <i class="fa fa-trash fa-2x text-danger-light"></i>
+                                        </div>
+                                    </div>
+                                    <div class="py-20 text-center">
+                                        <div class="font-size-h2 font-w700 mb-0 text-danger" data-toggle="countTo" data-to="3">0</div>
+                                        <div class="font-size-sm font-w600 text-uppercase text-muted">Canceled </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Top Sellers -->
+
+
+                    </div>
+                    <!-- END Overview -->
+                  <div class="row gutters-tiny">
+                        <!-- Row #1 -->
+                        <div class="col-md-6 col-xl-6">
+                            <a class="block block-link-shadow" href="javascript:void(0)">
+                                <div class="block-content block-content-full">
+                                    <div class="font-size-h2 font-w700">64</div>
+                                    <div class="font-size-sm font-w600 text-uppercase text-muted">ORDERS</div>
+                                    <div class="font-size-sm font-w400 text-uppercase text-muted">ARE DELIVERED/COMPLETE</div>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6 col-xl-6">
+                            <a class="block block-link-shadow" href="javascript:void(0)">
+                                <div class="block-content block-content-full text-right">
+                                    <div class="font-size-h2 font-w700">0</div>
+                                    <div class="font-size-sm font-w600 text-uppercase text-muted">ORDERS</div>
+                                    <div class="font-size-sm font-w400 text-uppercase text-muted">ARE CLOSED</div>
+                                    
+                                </div>
+                            </a>
+                        </div>
+                        <!-- END Row #1 -->
+                    </div>  <!-- END Statistics -->
+
+                    </div>
+              
+                <div class="block">
+                      
+                                <div class="block-content">
+                                    <div class="row">
+                                        <div class="col-lg-12">
+                            <!-- Block Tabs Alternative Style -->
+                                            <div class="block">
+                                                <ul class="nav nav-tabs nav-tabs-alt" data-toggle="tabs" role="tablist">
+                                                    <li class="nav-item">
+                                                        <a class="nav-link active" href="#delivered">Delivered</a>
+                                                    </li>
+                                                    <li class="nav-item">
+                                                        <a class="nav-link" href="#closed">Closed</a>
+                                                    </li>
+                                                </ul>
+                                                <div class="block-content tab-content">
+                                                    <div class="tab-pane active" id="delivered" role="tabpanel">
+                                                        <div class="block block-rounded">
+                                                            <div class="block-content bg-body-light">
+                            <!-- Search -->
+                                                                <form action="be_pages_ecom_orders.html" method="post" onsubmit="return false;">
+                                                                    <div class="form-group">
+                                                                        <div class="input-group">
+                                                                            <input type="text" class="form-control" placeholder="Search orders..">
+                                        <div class="input-group-append">
+                                            <button type="submit" class="btn btn-secondary">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- END Search -->
+                        </div>
+                        <div class="block-content">
+                            <!-- Orders Table -->
+                            <table class="table table-borderless table-striped">
+                                <thead class="thead-light">						
+                                    <tr> 
+                                        <th style="width: 100px;">ID #</th>
+                                        <th>Purchase Date</th>
+                                        <th class="d-none d-sm-table-cell">Bill To Name</th>
+                                        <th class="d-none d-sm-table-cell">Ship To Name</th>
+                                        <th class="d-none d-sm-table-cell">Grand Total</th>
+                                        <th class="d-none d-sm-table-cell">Status</th>
+                                        <th class="text-center">Action</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><a class="font-w600" href="be_pages_ecom_order.html">ORD.1851</a></td>
+                                        <td class="d-none d-sm-table-cell">2021/6/27</td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td><span class="badge badge-success">Completed</span></td>                                        
+                                        <td class="td-none d-sm-table-cell"><span class="text-black">78 KWD</span></td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit">
+                                                    <a href="order.html"><i class="fa fa-eye"></i></a> 
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled"data-toggle="modal" data-target="#modal-popout" title="" data-original-title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                                </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a class="font-w600" href="be_pages_ecom_order.html">ORD.1852</a></td>
+                                        <td class="d-none d-sm-table-cell">2021/6/27</td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td><span class="badge badge-success">Completed</span></td>                                        
+                                        <td class="td-none d-sm-table-cell"><span class="text-black">78 KWD</span></td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit">
+                                                    <a href="order.html"><i class="fa fa-eye"></i></a> 
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled"data-toggle="modal" data-target="#modal-popout" title="" data-original-title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                                </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a class="font-w600" href="be_pages_ecom_order.html">ORD.1853</a></td>
+                                        <td class="d-none d-sm-table-cell">2021/6/27</td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td><span class="badge badge-success">Completed</span></td>                                        
+                                        <td class="td-none d-sm-table-cell"><span class="text-black">78 KWD</span></td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit">
+                                                    <a href="order.html"><i class="fa fa-eye"></i></a> 
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled"data-toggle="modal" data-target="#modal-popout" title="" data-original-title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                                </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a class="font-w600" href="be_pages_ecom_order.html">ORD.1851</a></td>
+                                        <td class="d-none d-sm-table-cell">2021/6/27</td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td><span class="badge badge-success">Completed</span></td>                                        
+                                        <td class="td-none d-sm-table-cell"><span class="text-black">78 KWD</span></td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit">
+                                                    <a href="order.html"><i class="fa fa-eye"></i></a> 
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled"data-toggle="modal" data-target="#modal-popout" title="" data-original-title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                                </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a class="font-w600" href="be_pages_ecom_order.html">ORD.1852</a></td>
+                                        <td class="d-none d-sm-table-cell">2021/6/27</td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td><span class="badge badge-success">Completed</span></td>                                        
+                                        <td class="td-none d-sm-table-cell"><span class="text-black">78 KWD</span></td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit">
+                                                    <a href="order.html"><i class="fa fa-eye"></i></a> 
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled"data-toggle="modal" data-target="#modal-popout" title="" data-original-title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                                </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a class="font-w600" href="be_pages_ecom_order.html">ORD.1851</a></td>
+                                        <td class="d-none d-sm-table-cell">2021/6/27</td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td><span class="badge badge-success">Completed</span></td>                                        
+                                        <td class="td-none d-sm-table-cell"><span class="text-black">78 KWD</span></td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit">
+                                                    <a href="order.html"><i class="fa fa-eye"></i></a> 
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled"data-toggle="modal" data-target="#modal-popout" title="" data-original-title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                                </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a class="font-w600" href="be_pages_ecom_order.html">ORD.1852</a></td>
+                                        <td class="d-none d-sm-table-cell">2021/6/27</td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td><span class="badge badge-success">Completed</span></td>                                        
+                                        <td class="td-none d-sm-table-cell"><span class="text-black">78 KWD</span></td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit">
+                                                    <a href="order.html"><i class="fa fa-eye"></i></a> 
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled"data-toggle="modal" data-target="#modal-popout" title="" data-original-title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                                </div>
+                                        </td>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td><a class="font-w600" href="be_pages_ecom_order.html">ORD.1853</a></td>
+                                        <td class="d-none d-sm-table-cell">2021/6/27</td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td class="d-none d-sm-table-cell"> <a href="customer.html">customer</a></td>
+                                        <td><span class="badge badge-success">Completed</span></td>                                        
+                                        <td class="td-none d-sm-table-cell"><span class="text-black">78 KWD</span></td>
+                                        <td class="text-center">
+                                            <div class="btn-group">
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled" data-toggle="tooltip" title="" data-original-title="Edit">
+                                                    <a href="order.html"><i class="fa fa-eye"></i></a> 
+                                                </button>
+                                                <button type="button" class="btn btn-sm btn-secondary js-tooltip-enabled"data-toggle="modal" data-target="#modal-popout" title="" data-original-title="Delete">
+                                                    <i class="fa fa-times"></i>
+                                                </button>
+                                                </div>
+                                        </td>
+                                        
+                                    </tr>
+                        
+
+             
+                                </tbody>
+                            </table>
+                            <!-- END Orders Table -->
+
+                            <!-- Navigation -->
+                            <nav aria-label="Orders navigation">
+                                <ul class="pagination justify-content-end">
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0)" aria-label="Previous">
+                                            <span aria-hidden="true">
+                                                <i class="fa fa-angle-left"></i>
+                                            </span>
+                                            <span class="sr-only">Previous</span>
+                                        </a>
+                                    </li>
+                                    <li class="page-item active">
+                                        <a class="page-link" href="javascript:void(0)">1</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0)">2</a>
+                                    </li>
+                                    <li class="page-item disabled">
+                                        <a class="page-link" href="javascript:void(0)">...</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0)">8</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0)">9</a>
+                                    </li>
+                                    <li class="page-item">
+                                        <a class="page-link" href="javascript:void(0)" aria-label="Next">
+                                            <span aria-hidden="true">
+                                                <i class="fa fa-angle-right"></i>
+                                            </span>
+                                            <span class="sr-only">Next</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </nav>
+                            <!-- END Navigation -->
+                        </div>
+                    </div>
+                                                     
+                                            </div>
+                                                    <div class="tab-pane" id="closed" role="tabpanel">
+                   
+                                        <div class="block block-rounded">
+                        <div class="block-content bg-body-light">
+                            <!-- Search -->
+                            <form action="be_pages_ecom_orders.html" method="post" onsubmit="return false;">
+                                <div class="form-group">
+                                    <div class="input-group">
+                                        <input type="text" class="form-control" placeholder="Search orders..">
+                                        <div class="input-group-append">
+                                            <button type="submit" class="btn btn-secondary">
+                                                <i class="fa fa-search"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                            <!-- END Search -->
+                        </div>
+                        <div class="block-content">
+                            <P>No record found.</P>
+                        </div>
+                    </div>
+                                                                                      
+                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- END order -->
+                                        </div>
+                                    </div>
+                    </div>
+                </div>
+                
+               
+                </div>
+            </main>
+            <!-- END Main Container -->
+
+            <!-- Footer -->
+            <footer id="page-footer" class="opacity-0">
+                <div class="content py-20 font-size-sm clearfix">
+                    <div class="float-right">
+                        Crafted with <i class="fa fa-heart text-pulse"></i> by <a class="font-w600" href="https://1.envato.market/ydb" target="_blank">WG</a>
+                    </div>
+                    <div class="float-left">
+                        <a class="font-w600" href="https://1.envato.market/95j" target="_blank">mysupply.me 3.4</a> &copy; <span class="js-year-copy"></span>
+                    </div>
+                </div>
+            </footer>
+            <!-- END Footer -->
+        </div>
+        <!-- END Page Container -->
+        <!-- Pop Out Modal -->
+        <div class="modal fade" id="modal-popout" tabindex="-1" role="dialog" aria-labelledby="modal-popout" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-popout " role="document">
+                <div class="modal-content">
+                    <div class="block block-themed block-transparent mb-0 "> 
+                        <div class="block-header bg-danger">
+                            <h3 class="block-title">Delete Orders</h3>
+                            <div class="block-options">
+                                <button type="button" class="btn-block-option" data-dismiss="modal" aria-label="Close">
+                                    <i class="si si-close"></i>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="block-content">
+                            <p>Are you sure you want to delete the Orders?</p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-alt-secondary" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-alt-danger" data-dismiss="modal">
+                            <i class="fa fa-check"></i> delete
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- END Pop Out Modal -->
+
+        <!--
+            mysupply.me JS Core
+
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out assets/_es6/main/bootstrap.js for more info.
+
+            If you like, you could also include them separately directly from the assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+
+            assets/js/core/jquery.min.js
+            assets/js/core/bootstrap.bundle.min.js
+            assets/js/core/simplebar.min.js
+            assets/js/core/jquery-scrollLock.min.js
+            assets/js/core/jquery.appear.min.js
+            assets/js/core/jquery.countTo.min.js
+            assets/js/core/js.cookie.min.js
+        -->
+        <script src="assets/js/codebase.core.min.js"></script>
+
+        <!--
+            mysupply.me JS
+
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at assets/_es6/main/app.js
+        -->
+        <script src="assets/js/codebase.app.min.js"></script>
+    </body>
+</html>
